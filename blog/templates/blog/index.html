@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Home Blog {% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/includes/post.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/max.png' %}" alt="Ann - The Author of this blog"/>
+            <h2>Ann's Blog</h2>
+        </header>
+        <p>Hi, I am Annn, I love to earn money !</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thoughts</h2>
+
+        <ul>
+            {% for post in posts %}
+                {% include "blog/includes/post.html" %}
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>What I Do ?</h2>
+        <p>
+            Tôi là "Chấn bé đù" trong ngành It và tôi sẽ kể cho bạn các câu chuyện về IT
+        </p>
+        <p>
+            Mục tiêu của tôi là tiếp tục phát triển như một Developer !
+        </p>
+    </section>
+{% endblock %}
