@@ -137,7 +137,7 @@ main {
 }
 
 #alert {
-  margin: 8rem auto 3rem auto;
+  margin: 8rem auto -3rem auto;
   border: 1px solid #d6000b;
   background-color: #ffe6e7;
   padding: 1rem;
@@ -181,4 +181,23 @@ main {
 
 #comments h2 {
   color: #464646;
+}
+
+#read-later {
+  margin: 2rem 0;
+}
+
+#read-later button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+#read-later button:hover,
+#read-later button:active{
+  background-color: white;
+  color: #390281;
 }

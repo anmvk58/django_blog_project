@@ -14,3 +14,9 @@ class CommentForm(forms.ModelForm):
             "user_email": "Your email",
             "text": "Your comment"
         }
+        # error_messages = {
+        #     "user_name": {
+        #         "required": "Your name must not be empty!",
+        #         "max_length": "Please enter a shsorter name!"
+        #     }
+        # }
